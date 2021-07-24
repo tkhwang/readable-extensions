@@ -1,4 +1,6 @@
 {
+  "typeRoots": ["./node_modules/@types"],
+  "exclude": ["node_modules", "tmp"],
   "compileOnSave": false,
   "compilerOptions": {
     "rootDir": ".",
@@ -15,6 +17,5 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {}
-  },
-  "exclude": ["node_modules", "tmp"]
+  }
 }
