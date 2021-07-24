@@ -4,7 +4,12 @@ import React from 'react';
 const Connect = () => {
   return (
     <div className="flex items-end">
-      <a href={config.siteUrl} target="_blank" className="text-gray-400 hover:text-blue-600">
+      <a
+        href={config.siteUrl}
+        target="_blank"
+        className="text-gray-400 hover:text-blue-600"
+        rel="readable-link noreferrer"
+      >
         Go to the Readable
       </a>
       <button
