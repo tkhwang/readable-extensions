@@ -1,17 +1,19 @@
 {
   "name": "Readable",
   "description": "Read and share anything readable in Readable!",
-  "version": "0.0.1",
-  "manifest_version": 3,
+  "version": "0.0.2",
+  "manifest_version": 2,
   "icons": {
     "128": "readable_logo.png"
   },
   "background": {
-    "service_worker": "background.js"
+    "scripts": ["background.js"],
+    "persistent": false
   },
-  "action": {
-    "default_popup": "index.html"
+  "oauth2": {
+    "client_id": "87250999771-ofgbn4h1e387dcfhfgt7cdi17cncnqar.apps.googleusercontent.com",
+    "scopes": ["openid", "email", "profile"]
   },
-  "permissions": ["activeTab", "tabs", "storage", "scripting"],
-  "host_permissions": ["http://*/*", "https://*/*"]
+  "permissions": ["identity"],
+  "key": "lDJZhr8znQdGa0--IQ7x6aw7"
 }

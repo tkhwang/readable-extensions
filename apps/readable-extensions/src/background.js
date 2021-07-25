@@ -1,3 +1,5 @@
+console.log('[+] 🚀 redable-extensions from background.');
+
 /* eslint-disable no-undef */
 let color = '#3aa757';
 
