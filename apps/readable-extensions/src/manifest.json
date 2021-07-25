@@ -1,16 +1,17 @@
 {
   "name": "Readable",
   "description": "Read and share anything readable in Readable!",
-  "version": "1.0",
+  "version": "0.0.1",
   "manifest_version": 3,
+  "icons": {
+    "128": "readable_logo.png"
+  },
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["storage", "tabs", "activeTab", "scripting"],
   "action": {
     "default_popup": "index.html"
   },
-  "icons": {
-    "128": "readable_logo.png"
-  }
+  "permissions": ["activeTab", "tabs", "storage", "scripting"],
+  "host_permissions": ["http://*/*", "https://*/*"]
 }
